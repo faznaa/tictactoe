@@ -71,6 +71,7 @@ function Board() {
   const reset = () => {
     setBoardValues(_boardVal);
     setWinner("")
+    setNextPlayer("X")
   }
   const handleClick = (index) => {
     if(winner=="X" || winner=="O" || boardValues[index]!==0) {
